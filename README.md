@@ -13,4 +13,5 @@ if(@indexBegin=0)  RETURN NULL;
 DECLARE @indexEnd int = CHARINDEX(@end,@text,@indexBegin);
 if(@indexEnd=0) RETURN NULL;
 RETURN SUBSTRING(@text,@indexBegin+1,@indexEnd-@indexBegin-1);
+
 END;
